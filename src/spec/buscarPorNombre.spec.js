@@ -7,6 +7,7 @@ function buscarPorNombre(ejercicios,nombreBuscado){
   return catalogo.buscarPorNombre(nombreBuscado);
 }
 
+
 describe("Buscar ejercicio por nombre", () => {
     it("Devuelve vacio no encontro el ejercicio", () => {
         expect(buscarPorNombre(ejerciciosPruebas,"Numeros Random")).toEqual([]);
