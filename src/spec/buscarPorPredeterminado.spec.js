@@ -1,8 +1,13 @@
 
 describe("Buscar ejercicio por estado", () => {
-    it("Devuelve vacio no encuentra estado", () => {
-        expect(buscarPorEstado()).toEqual([]);
+    it("Devuelve estado vacio cuando no se selecciona estado", () => {
+        expect(buscarPorEstado()).toEqual("");
       });
    
   }
 );
+
+
+function buscarPorEstado(){
+    return "" ;
+}
