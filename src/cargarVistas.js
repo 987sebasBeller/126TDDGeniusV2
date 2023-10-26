@@ -13,9 +13,11 @@ function crearHTMLejercicios(listaEjercicios, contenedor) {
             </div>
           </div>
           <div id="contenidodetallecatalogo">
+          <p>Estado:${ejercicio.getEstado()}</p>
             <h3>${ejercicio.getTitulo()}</h3>
             <p>${ejercicio.getResumen()}<span>Ver mas</span></p>
           </div>`;
+
     });
     contenedor.innerHTML += ejerciciosHTML;
   }
