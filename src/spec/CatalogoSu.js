@@ -26,7 +26,7 @@ class Catalogo{
             coincidencias= this.lista;
         }
         else{
-         coincidencias=this.lista.filter(ejercicio=>ejercicio.getTitulo()==estadoEjercicio);
+         coincidencias=this.lista.filter(ejercicio=>ejercicio.getTitulo()==tituloEjercicio , ejercicio=>ejercicio.getEstado()==estadoEjercicio);
         }
         
         return coincidencias;

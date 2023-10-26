@@ -14,6 +14,8 @@ describe("Buscar ejercicio por estado", () => {
     it("Devuelve la lista de coincidencia con el estado del ejercicio", () => {
         expect(buscarKataPorEstado(ejerciciosPruebas,"Numeros Romanos")).toEqual([{"categoria": "Numeros", "estado": "Terminado/No-Terminado", "imagen": "10PUZY7ai9akJ5VAGzWbPNKGjQXBQ4-f9", "resumen": "resumen2", "titulo": "Numeros Romanos"}]);
     });
-
+    it("Devuelve la lista de coincidencia con el nombre y estado del ejercicio", () => {
+        expect(buscarKataPorEstado(ejerciciosPruebas,"Numeros Romanos")).toEqual([{"categoria": "Numeros", "estado": "Terminado/No-Terminado", "imagen": "1euc7nmD5AGroYcxYYx4DEd-MYAzXuUph", "resumen": "resumen", "titulo": "Numeros Romanos"}]);
+    });
   }
 );
