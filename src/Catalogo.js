@@ -31,6 +31,16 @@ class Catalogo{
         
         return coincidencias;
     }
+    buscarPorestado(estadoEjercicio){
+        let coincidencias=[];
+
+        if(estadoEjercicio==""){
+            coincidencias= "";
+        }
+      
+        
+        return coincidencias;
+    }
 
 };
 export {Catalogo};
