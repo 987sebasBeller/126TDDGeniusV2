@@ -22,7 +22,7 @@ class Catalogo{
     buscarKataPorEstado(estadoEjercicio){
         let coincidencias=[];
 
-        if(estadoEjercicio==""){
+        if(tituloEjercicio=="", estadoEjercicio==""){
             coincidencias= this.lista;
         }
         else{
