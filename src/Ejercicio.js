@@ -17,6 +17,9 @@ class Ejercicio{
     getResumen(){
         return this.resumen;
     }
+    getEstado(){
+        return "No Terminado";
+    }
     validarTitulo(){
         return this.titulo != "";
     }
@@ -29,5 +32,6 @@ class Ejercicio{
     validarAtributos(){
         return this.validarTitulo() && this.validarCategoria() && this.validarResumen();
     }
+
 }
 export  {Ejercicio};
