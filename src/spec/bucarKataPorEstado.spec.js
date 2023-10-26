@@ -21,5 +21,8 @@ describe("Buscar ejercicio por estado", () => {
         ejerciciosPruebas.push(new Ejercicio("Numeros Romanos",undefined,undefined,undefined,undefined));
         expect(buscarKataPorEstado(ejerciciosPruebas,"Numeros Romanos")).toEqual([{"categoria": "", "estado": "","imagen": "1euc7nmD5AGroYcxYYx4DEd-MYAzXuUph","resumen": "","titulo": "Numeros Romanos"}]);
       });
+    it("Devuelve la lista completa de ejercicios si no se ingresa nada", () => {
+        expect(buscarKataPorEstado(ejerciciosPruebas,"")).toEqual(ejerciciosPruebas);
+      });
   }
 );

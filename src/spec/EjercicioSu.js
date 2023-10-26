@@ -1,6 +1,7 @@
 class Ejercicio{
     constructor(titulo="",categoria="",imagen="1euc7nmD5AGroYcxYYx4DEd-MYAzXuUph",resumen=""){
         this.titulo=titulo;
+        this.estado=estado;
         this.categoria=categoria;
         this.imagen=imagen;
         this.resumen=resumen;
