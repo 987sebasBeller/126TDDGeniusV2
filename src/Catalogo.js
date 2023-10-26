@@ -32,8 +32,8 @@ class Catalogo{
         return coincidencias;
     }
     buscarPorEstado(titulobuscado){
-        
-        return [];
+        let coincidencias=[];
+        return coincidencias;
     }
 
 };
