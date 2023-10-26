@@ -10,7 +10,7 @@ const txtNombre = document.getElementById("txtNombre");
 const selecCategoria = document.getElementById("selecCategoria");
 const txtDetalle = document.getElementById("txtDetalle");
 const txtBuscarNombreEjer=document.getElementById("txtbuscar");
-
+const selectEstado=document.getElementById("selectEstado");
 
 function llenarEjercicios() {
   console.log(catalogo);
@@ -51,6 +51,18 @@ function buscarEjercicioPorNombre(){
     else
       crearHTMLejercicios(listaCoincidencias,detalleCatalogo);
 }
+function buscarEjercicioPorEstado(){
+  let estado=selectEstado.value;
+  let listaCoincidencias=catalogo.buscarPorEstado(estado);
+  console.log(listaCoincidencias)
+  console.log(estado)
+  if(listaCoincidencias.length==CERO){
+      mostrarMensajeDeAlerta("No se encontro el/los ejercicios");
+      detalleCatalogo.innerHTML="";
+  }
+  else
+    crearHTMLejercicios(listaCoincidencias,detalleCatalogo);
+}
 
 
-export { llenarEjercicios, crearjercicio, buscarEjercicioPorNombre};
+export { llenarEjercicios, crearjercicio, buscarEjercicioPorNombre,buscarEjercicioPorEstado};

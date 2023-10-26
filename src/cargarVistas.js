@@ -93,7 +93,23 @@ function crearHTMLejercicios(listaEjercicios, contenedor) {
 </div>
     `
   }
+  function crearfrmBuscarPorEstado(){
+    contenedor.innerHTML+= `<div id="busqueda">
+    <div id="formulariocategoria">
+        <form>
+
+                 <select name="Estado" id="selectEstado">
+
+                                <option value="Terminado">Terminado</option>
+                                <option value="No Terminado">No Terminado</option>
+                            </select>
+        </form>
+    </div>
+
+</div>`
+  }
   crearfrmBuscar();
+  crearfrmBuscarPorEstado();
   crearfrmListarEjercicios();
   crearfrmejercicio();
   frmCrearUsuario();
