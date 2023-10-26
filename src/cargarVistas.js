@@ -61,6 +61,7 @@ function crearHTMLejercicios(listaEjercicios, contenedor) {
                                 <option value="Cadenas">Cadenas</option>
                                 <option value="Juegos">Juegos</option>
                             </select>
+                            <p>Estado:No terminado</p>
                             <label>Detalle:</label>
                             <textarea id="txtDetalle" name="txtDetalle" placeholder="Ingresar el detalle del ejercicio">
 
