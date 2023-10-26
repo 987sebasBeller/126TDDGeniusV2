@@ -1,9 +1,10 @@
 class Ejercicio{
-    constructor(titulo="",categoria="",imagen="1euc7nmD5AGroYcxYYx4DEd-MYAzXuUph",resumen=""){
+    constructor(titulo="",categoria="",imagen="1euc7nmD5AGroYcxYYx4DEd-MYAzXuUph",resumen="",estado="No Terminado"){
         this.titulo=titulo;
         this.categoria=categoria;
         this.imagen=imagen;
         this.resumen=resumen;
+        this.estado=estado;
     }
     getTitulo(){
         return this.titulo;
@@ -18,7 +19,7 @@ class Ejercicio{
         return this.resumen;
     }
     getEstado(){
-        return "No Terminado";
+        return this.estado;
     }
     validarTitulo(){
         return this.titulo != "";

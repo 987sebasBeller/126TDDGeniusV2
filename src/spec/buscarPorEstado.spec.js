@@ -5,6 +5,9 @@ describe("Devolver estado del ejercicio", () => {
         let ejercicio=new Ejercicio("ejer1","c1",undefined,"resumen1")
         expect(ejercicio.getEstado()).toEqual("No Terminado");
       });
-
+      it("Devuelve Terminado ejercicio Terminado", () => {
+        let ejercicio=new Ejercicio("ejer1","c1",undefined,"resumen1","Terminado")
+        expect(ejercicio.getEstado()).toEqual("Terminado");
+      });
   }
 );
