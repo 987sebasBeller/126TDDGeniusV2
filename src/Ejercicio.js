@@ -33,6 +33,9 @@ class Ejercicio{
     validarAtributos(){
         return this.validarTitulo() && this.validarCategoria() && this.validarResumen();
     }
+    setEstado(){
+        return "Terminado";
+    }
 
 }
 export  {Ejercicio};
