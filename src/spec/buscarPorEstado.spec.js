@@ -17,5 +17,9 @@ describe("Buscar ejercicio por estado", () => {
         let catalogo=new Catalogo(ejerciciosPruebas);
         expect(catalogo.buscarPorEstado("Terminado")).toEqual([{"categoria": "Numeros","estado": "Terminado", "imagen": "1euc7nmD5AGroYcxYYx4DEd-MYAzXuUph", "resumen": "resumen", "titulo": "Numeros Primos"}]);
       });
+      it("Devuelve los ejercicios con estado no termniado", () => {
+        let catalogo=new Catalogo(ejerciciosPruebas);
+        expect(catalogo.buscarPorEstado("No Terminado")).toEqual(ejerciciosPruebas.filter(ele=>ele.getEstado()=="No Terminado"));
+      });
   }
 );

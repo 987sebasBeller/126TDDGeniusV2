@@ -32,8 +32,14 @@ class Catalogo{
         return coincidencias;
     }
     buscarPorEstado(estadoBus){
-     return [{"categoria": "Numeros","estado": "Terminado", "imagen": "1euc7nmD5AGroYcxYYx4DEd-MYAzXuUph", "resumen": "resumen", "titulo": "Numeros Primos"}];
-    }
+        let coincidencias=[];
+        this.lista.forEach(element => {
+            if(element.getEstado()==estadoBus){
+                coincidencias.push(element);
+            }
+        });
+     return coincidencias
+      }
 
 };
 export {Catalogo};
