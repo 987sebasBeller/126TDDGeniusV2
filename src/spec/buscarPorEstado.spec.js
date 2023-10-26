@@ -8,9 +8,9 @@ function buscarPorEstado(ejercicios,estadoBuscado){
 
 describe("Buscar ejercicio por estado", () => {
     it("Devuelve vacio no encontro ninguno de los estados ingresando Terminado", () => {
-        expect(buscarPorEstado("Terminado")).toEqual([]);
+        expect(buscarPorEstado(ejerciciosPruebas, "Terminado")).toEqual([]);
       });
       it("Devuelve vacio no encontro ninguno de los estados ingresando No Terminado", () => {
-        expect(buscarPorEstado("No Terminado")).toEqual([]);
+        expect(buscarPorEstado(ejerciciosPruebas, "No Terminado")).toEqual([]);
       });
 });
