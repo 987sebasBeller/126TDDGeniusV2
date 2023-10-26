@@ -1,4 +1,4 @@
-import { Ejercicio } from "./EjercicioSu";
+//import { Ejercicio } from "./EjercicioSu";
 import { ejerciciosPruebas } from "./constantesSu";
 class Catalogo{
     constructor(lista=[]){
@@ -9,7 +9,28 @@ class Catalogo{
         if(this.lista.length!=0) mensaje="La lista de ejerciicos no tiene estado";
         return mensaje;
     }
-    
+    getNPrimerosEjercicios(cantidad){
+        return this.lista.slice(0,cantidad);
+    }
+    getEjercicios(){
+        return this.lista;
+    }
+    agregarEjercicio(ejercicio){
+        this.lista.push(ejercicio);
+    }
+
+    buscarKataPorEstado(estadoEjercicio){
+        let coincidencias=[];
+
+        if(estadoEjercicio==""){
+            coincidencias= this.lista;
+        }
+        else{
+         coincidencias=this.lista.filter(ejercicio=>ejercicio.getTitulo()==estadoEjercicio);
+        }
+        
+        return coincidencias;
+    }
 
 };
 export {Catalogo};
