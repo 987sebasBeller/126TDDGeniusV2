@@ -31,6 +31,10 @@ class Catalogo{
         
         return coincidencias;
     }
+    buscarPorEstado(titulobuscado){
+        
+        return [];
+    }
 
 };
 export {Catalogo};

@@ -52,5 +52,17 @@ function buscarEjercicioPorNombre(){
       crearHTMLejercicios(listaCoincidencias,detalleCatalogo);
 }
 
+function buscarEjercicioPorEstado(){
+  let estadoBuscado=txtBuscarEstadoEjer.value;
+  let listaCoincidencias=catalogo.buscarPorEstado(estadoBuscado);
+  console.log(listaCoincidencias)
+  console.log(estadoBuscado)
+  if(listaCoincidencias.length==CERO){
+      mostrarMensajeDeAlerta("No se encontro el/los ejercicios con ese estado");
+      detalleCatalogo.innerHTML="";
+  }
+  else
+    crearHTMLejercicios(listaCoincidencias,detalleCatalogo);
+}
 
-export { llenarEjercicios, crearjercicio, buscarEjercicioPorNombre};
+export { llenarEjercicios, crearjercicio, buscarEjercicioPorNombre, buscarEjercicioPorEstado};
