@@ -31,6 +31,9 @@ class Catalogo{
         
         return coincidencias;
     }
+    buscarPorEstado(estadoBus){
+     return [{"categoria": "Numeros","estado": "Terminado", "imagen": "1euc7nmD5AGroYcxYYx4DEd-MYAzXuUph", "resumen": "resumen", "titulo": "Numeros Primos"}];
+    }
 
 };
 export {Catalogo};

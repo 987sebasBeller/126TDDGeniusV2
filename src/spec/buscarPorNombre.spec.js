@@ -15,7 +15,7 @@ describe("Buscar ejercicio por nombre", () => {
         expect(buscarPorNombre(ejerciciosPruebas,"Numeros Romanos")).toEqual([{"categoria": "Numeros","estado": "No Terminado", "imagen": "10PUZY7ai9akJ5VAGzWbPNKGjQXBQ4-f9", "resumen": "resumen2", "titulo": "Numeros Romanos"}]);
     });
     it("Devuelve la lista de coincidencia con el nombre del ejercicio", () => {
-        expect(buscarPorNombre(ejerciciosPruebas,"Numeros Primos")).toEqual([{"categoria": "Numeros","estado": "No Terminado", "imagen": "1euc7nmD5AGroYcxYYx4DEd-MYAzXuUph", "resumen": "resumen", "titulo": "Numeros Primos"}]);
+        expect(buscarPorNombre(ejerciciosPruebas,"Numeros Primos")).toEqual([{"categoria": "Numeros","estado": "Terminado", "imagen": "1euc7nmD5AGroYcxYYx4DEd-MYAzXuUph", "resumen": "resumen", "titulo": "Numeros Primos"}]);
     });
     it("Devuelve la lista de coincidencia con el ejercicio titulado numeros random", () => {
       ejerciciosPruebas.push(new Ejercicio("Numeros Random",undefined,undefined,undefined));

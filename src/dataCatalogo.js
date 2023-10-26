@@ -17,7 +17,8 @@ const ejercicios=[
         "Suma de dos números",
         "Numeros",
         undefined,
-        "Escribe un programa que sume dos números enteros ingresados por el usuario."
+        "Escribe un programa que sume dos números enteros ingresados por el usuario.",
+        "Terminado"
     )
     ,
     new Ejercicio(
