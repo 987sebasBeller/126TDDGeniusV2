@@ -33,12 +33,8 @@ class Catalogo{
     }
     buscarPorEstado(estadoBus){
         let coincidencias=[];
-        this.lista.forEach(element => {
-            if(element.getEstado()==estadoBus){
-                coincidencias.push(element);
-            }
-        });
-     return coincidencias
+        coincidencias= this.lista.filter(ejercicio=>ejercicio.getEstado()==estadoBus);
+     return coincidencias;
       }
 
 };
