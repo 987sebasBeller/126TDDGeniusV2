@@ -24,4 +24,10 @@ describe("Ver detalle del ejercicio", () => {
         cy.get("#categoria").should("contain","Numeros")
 
     });
+    it("Devuelve la dificultad  del ejercicio en Ver Detalle de ejercicio",()=>{
+        cy.visit("/");
+        cy.get("#ejercicio-1").next("p").find("#btnVermas").click();
+        cy.get("#dificultad").should("contain","ALTA");
+
+    });
   });
