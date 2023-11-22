@@ -157,7 +157,7 @@ label{
     font-weight: bold;
    
 }
-input[type=submit]{
+input[type=submit],#btnVermas{
     padding:12px;
     background-color: #00A99D;
     color: white;
@@ -212,7 +212,7 @@ input[type=submit]:hover{
     flex: 90%;
 }
 
-#botonEditar {
+#botonEditar,#btnVermas {
     
     width: 50px;
     text-align: center;

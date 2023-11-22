@@ -25,11 +25,11 @@ function crearHTMLejercicios(listaEjercicios, contenedor) {
      
         <input id="botonEditar" type="submit" data-value="${ejercicio.getTitulo()}" value="Editar"> 
           <h3 id="ejercicio-${ejercicio.getId()}">${ejercicio.getTitulo()}</h3>
-          <p>${ejercicio.getResumen()}<span>Ver mas</span></p>
+          <p>${ejercicio.getResumen()}<input id="btnVermas" type="submit" data-value="${ejercicio.getTitulo()}" value="Ver mas"></p>
            <div>Categoria:<span id="categoria">${ejercicio.getCategoria()}<span id="dificultad"> | Dificultad:${ejercicio.getDificultad()}</span></span></div>
           
          
-          
+        
 
         </div>`;
         i++;
