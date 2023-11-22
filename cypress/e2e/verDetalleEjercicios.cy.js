@@ -12,4 +12,10 @@ describe("Ver detalle del ejercicio", () => {
         cy.get("#txtNombre").should("contain","Numeros Primos")
 
     });
+    it("Verifica que la imagen del  del ejercicio Ver Detalle de ejercicio",()=>{
+        cy.visit("/");
+        cy.get("#ejercicio-1").next("p").find("#btnVermas").click();
+        cy.get("#imageContenidoDetalle img").should("be.visible")
+
+    });
   });
