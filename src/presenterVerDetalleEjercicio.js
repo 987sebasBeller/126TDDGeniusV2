@@ -7,5 +7,5 @@ const detalleCatalogo = document.getElementById("contenido");
 
 document.getElementById("txtNombre").innerHTML=valorTitulo;
 document.getElementById("imageContenidoDetalle").querySelector("img").src=URLIMAGENES+ejercicio.getImagen();
-
+document.getElementById("categoria").innerHTML=ejercicio.getCategoria()
 detalleCatalogo.style.display="none";

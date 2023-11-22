@@ -18,4 +18,10 @@ describe("Ver detalle del ejercicio", () => {
         cy.get("#imageContenidoDetalle img").should("be.visible")
 
     });
+    it("Devuelve la categoria  del ejercicio en Ver Detalle de ejercicio",()=>{
+        cy.visit("/");
+        cy.get("#ejercicio-1").next("p").find("#btnVermas").click();
+        cy.get("#categoria").should("contain","Numeros")
+
+    });
   });
