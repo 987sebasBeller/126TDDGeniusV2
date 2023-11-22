@@ -30,4 +30,10 @@ describe("Ver detalle del ejercicio", () => {
         cy.get("#dificultad").should("contain","ALTA");
 
     });
+    it("Devuelve el resumen del ejercicio en Ver Detalle de ejercicio",()=>{
+        cy.visit("/");
+        cy.get("#ejercicio-1").next("p").find("#btnVermas").click();
+        cy.get("#resumen").should("contain",ejercicios[0].getResumen());
+
+    });
   });

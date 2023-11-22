@@ -9,4 +9,6 @@ document.getElementById("txtNombre").innerHTML=valorTitulo;
 document.getElementById("imageContenidoDetalle").querySelector("img").src=URLIMAGENES+ejercicio.getImagen();
 document.getElementById("categoria").innerHTML=ejercicio.getCategoria()
 document.getElementById("dificultad").innerHTML=ejercicio.getDificultad()
+document.getElementById("resumen").innerHTML=ejercicio.getResumen()
+
 detalleCatalogo.style.display="none";
