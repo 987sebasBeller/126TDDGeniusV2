@@ -3,7 +3,7 @@ import { URLIMAGENES, IMAGENPREDETERMINADA } from "../../src/constantes";
 
 describe("Buscar ejecicio por categoria", () => {
   beforeEach(() => {
-    cy.visit("/");
+    cy.visit("/index.html");
     cy.get("#menubuscarejerPorCategoria").click();
   });
 
