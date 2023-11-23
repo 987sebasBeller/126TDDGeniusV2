@@ -7,6 +7,11 @@ function getTituloModificado(posicionEjercicio,nuevoTitulo){
   ejercicio.setTitulo(nuevoTitulo); 
   return ejercicio.getTitulo();
 }
+function getCategoriaModificado(posicionEjercicio,nuevoCategoria){
+  let ejercicio=ejerciciosPruebas[posicionEjercicio];
+  ejercicio.setCategoria(nuevoCategoria); 
+  return ejercicio.getCategoria();
+}
 describe("Editar Ejercicio", () => {
 
     it("Permitir modificar el título", () => {
@@ -16,14 +21,10 @@ describe("Editar Ejercicio", () => {
         expect(getTituloModificado(1,"Numeros Romanos 10")).toEqual('Numeros Romanos 10');
       });
     it("Permitir modificar la categoría", () => {
-        let ejercicio=ejerciciosPruebas[0];
-        ejercicio.setCategoria('Numeros');
-        expect(ejercicio.getCategoria()).toEqual('Numeros');
+        expect(getCategoriaModificado(0,"Numeros")).toEqual('Numeros');
       });
       it("Permitir modificar cualquier categoría", () => {
-        let ejercicio=ejerciciosPruebas[2];
-        ejercicio.setCategoria('Arboles');
-        expect(ejercicio.getCategoria()).toEqual('Arboles');
+        expect(getCategoriaModificado(2,"Arboles")).toEqual('Arboles');
       });
       it("Permitir modificar cualquier resumen", () => {
         let ejercicio=ejerciciosPruebas[1];
