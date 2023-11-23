@@ -17,5 +17,9 @@ class ListaUsuarios{
         });
         return lista;
     }
+    guardarUsuarios(){
+        const objetoJSON = JSON.stringify(this.lista);
+        localStorage.setItem("listaUsuarios", objetoJSON);
+    }
 };
 export {ListaUsuarios};

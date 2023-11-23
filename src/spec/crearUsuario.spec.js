@@ -78,6 +78,14 @@ describe("Almacenar datos del usuaruio", () => {
     let listaUsuarios=new ListaUsuarios();
     expect(listaUsuarios.convertirJson([{'nombre':'pepe','password':'123'},{'nombre':'juan','password':'124'}])).toEqual([new Usuario("pepe","123"),new Usuario("juan","124")]);
   });
+  it("Guarda la lista de usuarios en el navegador", () => {
+    localStorage.clear();
+    let listaUsuarios=new ListaUsuarios();
+    listaUsuarios.agregarUsuario(new Usuario("pepe","123"));
+    listaUsuarios.agregarUsuario(new Usuario("juan","124"));
+    listaUsuarios.guardarUsuarios();
+    expect(localStorage.getItem("listaUsuarios")).toEqual(JSON.stringify([{'nombre':'pepe','password':'123'},{'nombre':'juan','password':'124'}]));
+  });
 }
 );
  
