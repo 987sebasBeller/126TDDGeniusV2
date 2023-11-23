@@ -5,6 +5,11 @@ class ListaUsuarios{
         this.lista=[];
     }
     getUsuarios(){
+        let usuarios= JSON.parse(localStorage.getItem("listaUsuarios"));
+        if(usuarios) {
+           usuarios= this.convertirJson(usuarios);
+            this.lista=usuarios;
+        }
         return this.lista;
     }
     agregarUsuario(usuario){
