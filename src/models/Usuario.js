@@ -21,8 +21,11 @@ class Usuario{
         esDiferente(atributo,atributoAComparar){
                 return atributo!=atributoAComparar
         }
+        esIgual(atributo,atributoAComparar){
+            return atributo==atributoAComparar
+        }
         EsPredeterminado(){
-            return this.nombre=="admin123" && this.password=="123";
+            return this.esIgual(this.nombre,"admin123") && this.esIgual(this.password,"123");
         }
   };
   export{Usuario};
