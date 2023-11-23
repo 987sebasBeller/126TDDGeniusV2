@@ -10,13 +10,16 @@ class Usuario{
             return this.password;
         }
         validarNombre(){
-            return this.nombre!="";
+            return this.esDiferente(this.nombre,"");
         }
         validarPassword(){
-            return this.password!="";
+            return this.esDiferente(this.password,"");
         }
         validarCampos(){
             return this.validarNombre() && this.validarPassword();
+        }
+        esDiferente(atributo,atributoAComparar){
+                return atributo!=atributoAComparar
         }
         EsPredeterminado(){
             return this.nombre=="admin123" && this.password=="123";
