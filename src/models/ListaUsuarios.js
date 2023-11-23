@@ -6,7 +6,7 @@ class ListaUsuarios{
         return this.lista;
     }
     agregarUsuario(usuario){
-        this.lista=[usuario];
+        this.lista.push(usuario);
     }
 };
 export {ListaUsuarios};
