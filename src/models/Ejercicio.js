@@ -29,14 +29,17 @@ class Ejercicio{
     setId(id){ 
         this.id=id;
     }
+    esDiferente(atributo,atributoAComparar){
+            return atributo!=atributoAComparar;
+    }
     validarTitulo(){
-        return this.titulo != "";
+        return this.esDiferente(this.titulo,"");
     }
     validarCategoria(){
-      return this.categoria !="";
+      return this.esDiferente(this.categoria,"");
     }
     validarResumen(){
-        return this.resumen !="";
+        return this.esDiferente(this.resumen,"");
     }
     validarAtributos(){
         return this.validarTitulo() && this.validarCategoria() && this.validarResumen();
