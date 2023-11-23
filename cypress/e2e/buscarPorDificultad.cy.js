@@ -3,7 +3,7 @@ import { URLIMAGENES, IMAGENPREDETERMINADA } from "../../src/constantes";
 
 describe("Buscar ejecicio por dificultad", () => {
     beforeEach(() => {
-      cy.visit("/");
+      cy.visit("/index.html");
       cy.get("#menubuscarejerPorDificultad").click();
     });
   

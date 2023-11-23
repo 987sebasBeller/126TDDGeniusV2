@@ -1,6 +1,6 @@
 describe("Crear usuario", () => {
   beforeEach(() => {
-    cy.visit("/");
+    cy.visit("/index.html");
     cy.get("#menucrearusuario").click();
   });
     it("Verifica que los campos del usuario esten llenos", () => {
