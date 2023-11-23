@@ -1,7 +1,7 @@
 import { ejercicios } from "../../src/dataCatalogo";
 import { URLIMAGENES,IMAGENPREDETERMINADA } from "../../src/constantes";
 function irAMenuCatalogo(){
-    cy.visit("/index.html");
+    cy.visit("/inicio.html");
     cy.get("#menucatalogo").click();
 }
 describe("Ver catalogo de ejercicio detallado", () => {

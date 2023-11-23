@@ -8,7 +8,7 @@ function mostrarImagen(imagenUrl){
   return URLIMAGENES+imagenUrl;
 }
 function escribirEjercicioBuscado(titulo){
-    cy.visit("/index.html");
+    cy.visit("/inicio.html");
         cy.get("#menubuscarejer").click();
         cy.get("#txtbuscar").type(titulo);
         cy.get("#txtbuscar").type("{enter}");

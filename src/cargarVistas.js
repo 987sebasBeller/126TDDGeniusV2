@@ -26,9 +26,9 @@ import { llenarEjercicios } from "./presenterCatalogo";
   }
   function crearMenuLateral(){
     menulateral.innerHTML=`
-    <div id="imghome"><a href="./index.html"><img src="${imagenCasita.src}" width="73px"></a></div>
+    <div id="imghome"><a href="./inicio.html"><img src="${imagenCasita.src}" width="73px"></a></div>
     <ul>
-        <li><a id="menucatalogo" href="./index.html">Catálogo</a></li>
+        <li><a id="menucatalogo" href="./inicio.html">Catálogo</a></li>
         <li><a id="menuacregarejer" href="./frmCrearEjercicio.html">Crear Ejercicio</a></li>
         <li><a id="menubuscarejer" href="./frmBuscarEjer.html">Buscar Ejercicio</a></li>
         <li><a id="menucrearusuario" href="./frmCrearUsuario.html">Crear Usuario</a></li>

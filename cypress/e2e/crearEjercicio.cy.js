@@ -1,6 +1,6 @@
 describe("Crear Ejercicio", () => {
   beforeEach(() => {
-    cy.visit("/index.html");
+    cy.visit("/inicio.html");
     cy.get("#menuacregarejer").click();
   });
 

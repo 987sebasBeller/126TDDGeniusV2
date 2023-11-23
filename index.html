@@ -1,53 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster">
-
+    <link rel="shortcut icon" href="/src/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/login.css">
     <title>TDD-Genius</title>
 </head>
-
 <body>
-    <img id="imagenCasita" src="./src/img/home.png" alt="" height="150px" hidden>
-
-    <img id="imagenIni" src="./src/img/logo.png" alt="" height="150px" hidden>
-
-    <div id="contCabecera">
-
-
-    </div>
-    <div id="cuerpo">
-        <div id="menulateral">
-            
-        </div>
-        <div id="allcontenido">
-            <div id="ubicacion">Estas aquí:<span><a href="#">Inicio</a></span> /<span> <a
-                        href="index.html"></a>Ver catalogo de katas</span> </div>
-
-
-            <div id="titulocatalogo">Ver catalogo de ejercicio</div>
-    
-
-            <div id="contenido">
-
+    <div id="formularioinicio">
+        <div id="primerfondo">
+            <div id="segundofondo">
+                <div id="contenidoformulario">
+                    <div id="imagenfomulario">
+                        <img src="src/img/login.png" width="150">
+                    </div>
+                <h2>INICIAR SESION</h2>
+                <div id="formulariodatos">
+                <form>
+                    <input id="txtusuario" type="text" value="" placeholder="Ingrese Usuario" >
+                    <input id="txtpassword" type="password" value="" placeholder="Ingrese Clave">
+                    <input id="btnInicioSesion" type="button" value="INICIAR">
+                </form>
             </div>
-           
-           
-
+            </div>
+            </div>
 
         </div>
 
+
     </div>
-    <script src="./src/cargarVistas.js" type="module"></script>
-    <script src="./src/redireccionarEjercicio.js" type="module"></script>
-
-    <footer>
-        <p>Integrantes:</p>
-    </footer>
-    
+    <script src="./src/presenterLogin.js" type="module"></script>
 </body>
-
 </html>

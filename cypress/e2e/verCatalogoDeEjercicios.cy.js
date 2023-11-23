@@ -2,7 +2,7 @@ import { ejercicios } from "../../src/dataCatalogo";
 import { URLIMAGENES,IMAGENPREDETERMINADA } from "../../src/constantes";
 describe("Ver catalogo de ejercicio", () => {
     beforeEach(() => {
-        cy.visit("/index.html");
+        cy.visit("/inicio.html");
         cy.get("#menucatalogo").click();
       });
     it("Devuelve el titulo del ejericicio ATDD",()=>{

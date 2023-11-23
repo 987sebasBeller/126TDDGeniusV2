@@ -30,4 +30,4 @@ function crearusuario(){
     crearusuario();
   });
 
-export {crearusuario};
+export {crearusuario,usuarios};
