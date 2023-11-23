@@ -11,7 +11,11 @@ class ListaUsuarios{
         this.lista.push(usuario);
     }
     convertirJson(jsonUsuarios){
-        return [new Usuario(jsonUsuarios.nombre,jsonUsuarios.password)]
+        let lista=[];
+        jsonUsuarios.forEach((usuario) => {
+             lista.push(new Usuario(usuario.nombre,usuario.password));
+        });
+        return lista;
     }
 };
 export {ListaUsuarios};

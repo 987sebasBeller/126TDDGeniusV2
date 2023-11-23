@@ -71,7 +71,12 @@ describe("Almacenar datos del usuaruio", () => {
   it("convierte un json de usuarios a una lista con 1 usuario", () => {
     localStorage.clear();
     let listaUsuarios=new ListaUsuarios();
-    expect(listaUsuarios.convertirJson({'nombre':'pepe','password':'123'})).toEqual([new Usuario("pepe","123")]);
+    expect(listaUsuarios.convertirJson([{'nombre':'pepe','password':'123'}])).toEqual([new Usuario("pepe","123")]);
+  });
+  it("convierte un json de usuarios a una lista usuarios", () => {
+    localStorage.clear();
+    let listaUsuarios=new ListaUsuarios();
+    expect(listaUsuarios.convertirJson([{'nombre':'pepe','password':'123'},{'nombre':'juan','password':'124'}])).toEqual([new Usuario("pepe","123"),new Usuario("juan","124")]);
   });
 }
 );
