@@ -27,7 +27,11 @@ class ListaUsuarios{
         localStorage.setItem("listaUsuarios", objetoJSON);
     }
     buscarUsuario(nombre){
-        return [new Usuario("pepe","123")];
+        let lista= new Usuario("pepe","123");
+        if(nombre=="juan"){
+            lista=new Usuario("juan","123");
+        }
+        return lista;
     }
 };
 export {ListaUsuarios};

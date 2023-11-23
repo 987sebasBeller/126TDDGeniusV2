@@ -6,7 +6,14 @@ describe("Iniciar Sesion", () => {
     localStorage.clear();
     let listaUsuarios=new ListaUsuarios();
     listaUsuarios.agregarUsuario(new Usuario("pepe","123"))
-    expect(listaUsuarios.buscarUsuario("pepe")).toEqual([new Usuario("pepe","123")]);
+    expect(listaUsuarios.buscarUsuario("pepe")).toEqual(new Usuario("pepe","123"));
+  });
+  it("Se busca al usuario juan en la lista de usuarios", () => {
+    localStorage.clear();
+    let listaUsuarios=new ListaUsuarios();
+    listaUsuarios.agregarUsuario(new Usuario("pepe","123"))
+    listaUsuarios.agregarUsuario(new Usuario("juan","123"))
+    expect(listaUsuarios.buscarUsuario("juan")).toEqual(new Usuario("juan","123"));
   });
 }
 );
