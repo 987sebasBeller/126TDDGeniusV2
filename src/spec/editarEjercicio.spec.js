@@ -12,6 +12,11 @@ function getCategoriaModificado(posicionEjercicio,nuevoCategoria){
   ejercicio.setCategoria(nuevoCategoria); 
   return ejercicio.getCategoria();
 }
+function getResumenModificado(posicionEjercicio,nuevoResumen){
+  let ejercicio=ejerciciosPruebas[posicionEjercicio];
+  ejercicio.setResumen(nuevoResumen); 
+  return ejercicio.getResumen();
+}
 describe("Editar Ejercicio", () => {
 
     it("Permitir modificar el título", () => {
@@ -27,9 +32,7 @@ describe("Editar Ejercicio", () => {
         expect(getCategoriaModificado(2,"Arboles")).toEqual('Arboles');
       });
       it("Permitir modificar cualquier resumen", () => {
-        let ejercicio=ejerciciosPruebas[1];
-        ejercicio.setResumen('resumen4');
-        expect(ejercicio.getResumen()).toEqual('resumen4');
+        expect(getResumenModificado(1,"resumen4")).toEqual('resumen4');
       });
   }
 );
