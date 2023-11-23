@@ -221,3 +221,19 @@ input[type=submit]:hover{
     
 
 }
+#btnVermas{
+    
+    color: #247bb5;
+    background-color: white;
+    font-weight: bold;
+    width: 80px;
+    padding: 0px;
+}
+#btnVermas:hover{
+    color: #B04221;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+    
