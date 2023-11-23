@@ -43,7 +43,7 @@ class Catalogo{
     buscarPorNombre(tituloEjercicio){
         let coincidencias=[];
 
-        if(tituloEjercicio==""){
+        if(this.esIgual(tituloEjercicio,"")){
             coincidencias= this.getEjercicios();
         }
         else{
@@ -56,19 +56,21 @@ class Catalogo{
     buscarEjerciosPorCategoria(categoria){
         let listaCoincidencias=[]
         this.lista.forEach((ejer) =>{
-         if(ejer.getCategoria()==categoria){
+         if(this.esIgual(ejer.getCategoria(),categoria)){
             listaCoincidencias.push(ejer);
             }
         }
         );
         return listaCoincidencias;
     }
-
+    esIgual(atributo,atributoAComparar){
+        return atributo==atributoAComparar;
+    }
 
     buscarEjerciosPorDificultad(dificultad){
         let listaCoincidencias=[];
         this.lista.forEach((ejer) =>{
-            if(ejer.getDificultad()==dificultad){
+            if(this.esIgual(ejer.getDificultad(),dificultad)){
                listaCoincidencias.push(ejer);
                }
             }
