@@ -145,7 +145,7 @@ input[type=text],input[type=password], input[type=search],select, textarea{
     margin: 10px 2px;
     resize: vertical;
 }
-#seleccionarDificultad{
+#formulariobuscarDificultad{
     width: 50%;
     margin: 0 auto;
     
@@ -235,5 +235,19 @@ input[type=submit]:hover{
     text-decoration: underline;
 }
 
-
-    
+.Titulonombre{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+.textoNegrita{
+    font-weight: bold;
+    color: #B04221;
+}
+#contenidoresumenejercicio{
+        padding: 20px;
+    }
+#contenidoresumenejercicio div{
+    padding: 10px;
+}
