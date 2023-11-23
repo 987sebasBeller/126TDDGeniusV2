@@ -13,11 +13,14 @@ class Catalogo{
     }
     verificarListaVacia(){
         let mensaje="No se tiene ejercicios disponibles"
-        if(this.lista.length!=0) mensaje="La lista tiene ejercicios";
+        if(this.esListaVacia(this.lista)) mensaje="La lista tiene ejercicios";
         return mensaje;
     }
     getNPrimerosEjercicios(cantidad){
         return this.lista.slice(0,cantidad);
+    }
+    esListaVacia(lista){
+        return lista.length!=0;
     }
     getEjercicios(){
         let ejercicios= JSON.parse(localStorage.getItem("listaEjercicios"));
