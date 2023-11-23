@@ -1,3 +1,5 @@
+import { Usuario } from "./Usuario";
+
 class ListaUsuarios{
     constructor(){
         this.lista=[];
@@ -7,6 +9,9 @@ class ListaUsuarios{
     }
     agregarUsuario(usuario){
         this.lista.push(usuario);
+    }
+    convertirJson(jsonUsuarios){
+        return [new Usuario(jsonUsuarios.nombre,jsonUsuarios.password)]
     }
 };
 export {ListaUsuarios};
