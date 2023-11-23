@@ -18,6 +18,9 @@ class Usuario{
         validarCampos(){
             return this.validarNombre() && this.validarPassword();
         }
+        EsPredeterminado(){
+            return false;
+        }
   };
   export{Usuario};
 

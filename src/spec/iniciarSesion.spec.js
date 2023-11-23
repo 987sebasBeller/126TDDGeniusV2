@@ -22,6 +22,10 @@ describe("Iniciar Sesion", () => {
     listaUsuarios.agregarUsuario(new Usuario("mario","123"))
     expect(listaUsuarios.buscarUsuario("mario")).toEqual(new Usuario("mario","123"));
   });
+  it("Se verifica si el usuario es predeterminado admin123 y pasword 123", () => {
+    let usuario=new Usuario("pepe","123");
+    expect(usuario.EsPredeterminado()).toEqual(false);
+  });  
 }
 );
  
