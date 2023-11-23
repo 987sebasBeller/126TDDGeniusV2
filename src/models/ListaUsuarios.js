@@ -1,6 +1,12 @@
 class ListaUsuarios{
+    constructor(){
+        this.lista=[];
+    }
     getUsuarios(){
-        return [];
+        return this.lista;
+    }
+    agregarUsuario(usuario){
+        this.lista=[usuario];
     }
 };
 export {ListaUsuarios};

@@ -53,6 +53,12 @@ describe("Almacenar datos del usuaruio", () => {
     let listaUsuarios=new ListaUsuarios();
     expect(listaUsuarios.getUsuarios()).toEqual([]);
   });
+  it("devuelve la lista de usuarios con 1 usuario agregado", () => {
+    localStorage.clear();
+    let listaUsuarios=new ListaUsuarios();
+    listaUsuarios.agregarUsuario(new Usuario("pepe","123"));
+    expect(listaUsuarios.getUsuarios()).toEqual([new Usuario("pepe","123")]);
+  });
 }
 );
  
