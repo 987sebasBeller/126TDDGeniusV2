@@ -26,5 +26,8 @@ class ListaUsuarios{
         const objetoJSON = JSON.stringify(this.lista);
         localStorage.setItem("listaUsuarios", objetoJSON);
     }
+    buscarUsuario(nombre){
+        return [new Usuario("pepe","123")];
+    }
 };
 export {ListaUsuarios};
