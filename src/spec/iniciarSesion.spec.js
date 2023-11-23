@@ -26,6 +26,10 @@ describe("Iniciar Sesion", () => {
     let usuario=new Usuario("pepe","123");
     expect(usuario.EsPredeterminado()).toEqual(false);
   });  
+  it("Se verifica si el usuario es predeterminado admin123 y pasword 123,siendo usuario predeterminado", () => {
+    let usuario=new Usuario("admin123","123");
+    expect(usuario.EsPredeterminado()).toEqual(true);
+  });  
 }
 );
  

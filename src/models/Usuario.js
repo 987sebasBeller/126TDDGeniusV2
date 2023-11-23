@@ -19,7 +19,7 @@ class Usuario{
             return this.validarNombre() && this.validarPassword();
         }
         EsPredeterminado(){
-            return false;
+            return this.nombre=="admin123" && this.password=="123";
         }
   };
   export{Usuario};
