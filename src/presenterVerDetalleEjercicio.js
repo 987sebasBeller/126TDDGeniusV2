@@ -7,8 +7,10 @@ const detalleCatalogo = document.getElementById("contenido");
 
 document.getElementById("txtNombre").innerHTML=valorTitulo;
 document.getElementById("imageContenidoDetalle").querySelector("img").src=URLIMAGENES+ejercicio.getImagen();
-document.getElementById("categoria").innerHTML=ejercicio.getCategoria()
-document.getElementById("dificultad").innerHTML=ejercicio.getDificultad()
-document.getElementById("resumen").innerHTML=ejercicio.getResumen()
+let categoria=document.getElementById("categoriaDetalle")
+categoria.innerHTML=ejercicio.getCategoria();
+let dificultad=document.getElementById("dificultadDetalle")
+dificultad.innerHTML=ejercicio.getDificultad();
+document.getElementById("resumen").innerHTML=ejercicio.getResumen();
 
 detalleCatalogo.style.display="none";

@@ -1,4 +1,6 @@
 import {Usuario} from "../models/Usuario";
+import { ListaUsuarios } from "../models/ListaUsuarios";
+import "jest-localstorage-mock";
 describe("Crear usuarios version basica", () => {
       it("Devuelve el username del usuario creado", () => {
         let usuario=new Usuario("pepe");
@@ -45,4 +47,12 @@ describe("Crear usuarios version basica", () => {
 });
   }
 );
-   
+describe("Almacenar datos del usuaruio", () => {
+  it("devuelve la lista de usuarios vacia", () => {
+    localStorage.clear();
+    let listaUsuarios=new ListaUsuarios();
+    expect(listaUsuarios.getUsuarios()).toEqual([]);
+  });
+}
+);
+ 
